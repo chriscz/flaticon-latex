@@ -1,0 +1,25 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage{fontspec}
+\usepackage{color}
+
+\input{fonts.latex}
+
+% some length definitions
+\newlength\myfsz%
+
+% --- Write some text using the given font size
+\newcommand{\FontSize}[2]{%
+\setlength\myfsz{#1}%
+\fontsize{\myfsz}{1.2\myfsz}{#2}%
+}
+
+% --- Write out text using a font and some colour
+% \FontSizeColour[colour]{fontsize}{text}
+\usepackage{xifthen}
+\newcommand{\FontSizeColor}[3][]{%
+\ifthenelse{\isempty{#1}}
+    {\FontSize{#2}{\selectfont#3}}
+    {\FontSize{#2}{\textcolor{#1}{\selectfont#3}}}}
+\begin{document}
+    \FontSizeColor[blue]{144pt}{\flanimalee}
+\end{document}
