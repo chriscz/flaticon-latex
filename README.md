@@ -18,8 +18,9 @@ Quick Intro
 
 Name Mappings
 -------------
-1. All -'s are removed from names
-2. All numbers are mapped as follows:
+1. All `-`'s are removed from names
+2. All digits are mapped as follows:
+```
    1 -> q
    2 -> w
    3 -> e
@@ -30,8 +31,11 @@ Name Mappings
    8 -> i
    9 -> o
    0 -> p
-3. this is the top row of a qwerty keyboard, which
-   makes translation fairly obvious.
+```
+3. this uses the top row of a qwerty keyboard, which
+   makes translation from digits to letters fairly obvious.
+4. for example, if the glyph name is `big-cat44` then the name 
+   would be translated to `bigcatrr`.
 
 
 Example
