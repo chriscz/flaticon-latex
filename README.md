@@ -4,6 +4,12 @@ Script that takes a Flaticon font package, extracts the names of all glyphs from
 the CSS file included by Flaticon and generates a LaTeX source file with commands 
 for each glyph.
 
+Example
+-------
+See the `snippet.tex` file for how this was produced.
+
+![Presentation Overview](/screenshot.png?raw=true)
+
 Quick Intro
 -----------
 1. create and download a font package from [Flaticon](http://www.flaticon.com/).

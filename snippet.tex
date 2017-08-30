@@ -1,0 +1,47 @@
+\begin{frame}{Presentation Overview}
+\begin{center}
+
+\resizebox{!}{0.52\textwidth}{%
+\begin{tikzpicture}[%
+    nstyle/.style={
+        concept,
+        font=\scshape\bfseries,
+        %minimum size=0pt
+        text width=2.3cm,
+        text=tlight,
+        %draw=mbackground
+        }
+    ]
+
+\path[mindmap,text=tdark]
+node[nstyle,font=\scshape\normalsize] (P){Presentation} 
+    child[concept color=mblue, grow=180]    {  node[nstyle]  (A)  {Requirements}}
+    child[concept color=mgreen, grow=150] {  node[nstyle]  (B)  {Similar Tools}}  
+    child[concept color=morange, grow=120]{  node[nstyle]  (C)  {System\\Phases}} 
+    child[concept color=mred, grow=90]   {  node[nstyle]  (D)  {ELF}}            
+    child[concept color=mpurple, grow=60]{ node[nstyle]  (E)  {Examples}}      
+    child[concept color=mpink,grow=30]  {  node[nstyle]  (F)  {Challenges}}     
+    child[concept color=mteal, grow=0] {  node[nstyle]  (G)  {Future}};        
+
+    %% place some icons
+    \draw node[draw=none, fill=none] at
+    ($(P) - (0, 0.8)$){\FontSize{30pt}{\textcolor{tlight}{\selectfont\flbusinessmanry}}};
+    \draw node[draw=none, fill=none] at
+    ($(A) - (0, 0.67)$){\FontSize{25pt}{\textcolor{tlight}{\selectfont\fltextup}} };
+    \draw node[draw=none, fill=none] at
+    ($(B) - (0, 0.67)$){\FontSize{25pt}{\textcolor{tlight}{\selectfont\fltoolboxe}} };
+    \draw node[draw=none, fill=none] at
+    ($(C) - (0, 0.8)$){\FontSize{21pt}{\textcolor{tlight}{\selectfont\flsettingsri}} };
+    \draw node[draw=none, fill=none] at
+    ($(D) - (0, 0.67)$){\FontSize{23pt}{\textcolor{tlight}{\selectfont\flsantaclaus}}};
+    \draw node[draw=none, fill=none] at
+    ($(E) - (0, 0.67)$){\FontSize{25pt}{\textcolor{tlight}{\selectfont\flsilhouetteqwi}}};
+    \draw node[draw=none, fill=none] at
+    ($(F) - (0, 0.67)$){\FontSize{28pt}{\textcolor{tlight}{\selectfont\flskunk}}};
+    \draw node[draw=none, fill=none] at
+    ($(G) - (0, 0.67)$){\FontSize{25pt}{\textcolor{tlight}{\selectfont\flmountaint}}};
+
+\end{tikzpicture}
+            }
+\end{center}
+\end{frame}
